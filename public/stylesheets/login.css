@@ -1,0 +1,80 @@
+/* login.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://r.mobirisesite.com/514436/assets/images/photo-1517694712202-14dd9538aa97.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    max-width: 500px; /* Increased width */
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark color for readability */
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger font size */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px; /* Slightly larger font size */
+    color: #444; /* Darker color for contrast */
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background: #f0f0f0; /* Light gray background for input fields */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    background: #fff; /* White background on focus */
+    outline: none;
+}
+
+button {
+    background-color: #007bff; /* Match with the color scheme of the background */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

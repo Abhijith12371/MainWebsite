@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <!-- <link rel="shortcut icon" href="Abhijith.jpg"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <% if(pass==false) {%>
+        <div class="nav-buttons">
+          <a href="/login" class="btn-login">Login</a>
+          <a href="/register" class="btn-signup">Sign Up</a>
+        </div>
+        <% } else{ %>
+          <div class="nav-buttons">
+            <a href="/logout" class="btn-signup">Logout</a>
+          </div>
+          <% } %>
+    </nav>
+    <% if (message && message.length> 0) { %>
+      <div class="alert alert-success" role="alert">
+        <%= message %>
+      </div>
+      <% } %>
+
+  </header>
+
+  <section id="home" data-aos="fade-up">
+    <div class="hero">
+      <h1 data-aos="fade-up" data-aos-delay="100">Welcome to My Portfolio</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Hello! I'm a web developer with a passion for creating beautiful and
+        functional websites.</p>
+      <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="300">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2 data-aos="fade-down">About Me</h2>
+    <div class="about-container" data-aos="fade-up" data-aos-delay="100">
+      <img src="./images/Abhijith.jpg" alt="About Me" data-aos="zoom-in" data-aos-delay="200">
+      <div class="about-text" data-aos="fade-up" data-aos-delay="300">
+        <p>I'm a dedicated web developer with a background in creating innovative and user-friendly websites. With a
+          strong foundation in HTML, CSS, and JavaScript, I bring projects to life with clean and efficient code.</p>
+        <p>I hold a B.Tech in Data Science and have professional experience in various web development technologies. My
+          goal is to continuously learn and improve my skills to deliver top-notch web solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2 data-aos="fade-down">Projects</h2>
+    <div class="project-container">
+      <div class="project" data-aos="fade-up" data-aos-delay="100">
+        <img
+          src="https://images.unsplash.com/photo-1637951193294-70e463a69435?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdoZXRoZXJ8ZW58MHx8MHx8fDA%3D"
+          alt="Weather App" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Weather App</h3>
+        <p>A web application that provides weather forecasts for any city. Users can search for current weather
+          conditions, as well as forecasts for the next few days.</p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, OpenWeather API</p>
+        <a href="https://wheatherapi.freewebhostmost.com/" target="_blank" class="btn" data-aos="fade-up"
+          data-aos-delay="300">View Project</a>
+        <a href="https://github.com/Abhijith12371/Prodigy-InfoTech/tree/master/Task5" target="_blank" class="btn"
+          data-aos="fade-up" data-aos-delay="400">View Code</a>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="100">
+        <img
+          src="https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dG9kb2xpc3R8ZW58MHx8MHx8fDA%3D"
+          width="300" height="200" alt="Task Manager" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Stop Watch</h3>
+        <p>A stop watch that allows you to stop, play, resume, and reset the time.</p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://abhijith-stop-watch.netlify.app/" target="_blank" class="btn" data-aos="fade-up"
+          data-aos-delay="300">View Project</a>
+        <a href="https://github.com/Abhijith12371/Task2" target="_blank" class="btn" data-aos="fade-up"
+          data-aos-delay="400">View Code</a>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://r.mobirisesite.com/514436/assets/images/photo-1517694712202-14dd9538aa97.jpeg"
+          alt="Portfolio Website" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website to showcase my projects, skills, and professional background. It includes an
+          "About Me" section, project showcases, and a contact form.</p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://abhijith7171.netlify.app/" target="_blank" class="btn" data-aos="fade-up"
+          data-aos-delay="300">View Project</a>
+        <a href="https://github.com/Abhijith12371/Prodigy-InfoTech/tree/master/Task4" target="_blank" class="btn"
+          data-aos="fade-up" data-aos-delay="400">View Code</a>
+      </div>
+      <div class="project" data-aos="fade-up" data-aos-delay="100">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1673735396428-d51dc2a7a62d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGljJTIwdGFjJTIwdG9lfGVufDB8fDB8fHww"
+          width="300" height="200" alt="Tic Tac Toe Game" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Tic Tac Toe Game</h3>
+        <p>A tic Tac Toe Game which has three different modes: normal, difficult, Asian mode.</p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://abhijith71-tic-tac-toe.netlify.app/" target="_blank" class="btn" data-aos="fade-up"
+          data-aos-delay="300">View Project</a>
+        <a href="https://github.com/Abhijith12371/Tic-Tac-Toe" target="_blank" class="btn" data-aos="fade-up"
+          data-aos-delay="400">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2 data-aos="fade-down">Skills</h2>
+    <ul>
+      <li data-aos="fade-up" data-aos-delay="100">HTML</li>
+      <li data-aos="fade-up" data-aos-delay="200">CSS</li>
+      <li data-aos="fade-up" data-aos-delay="300">JavaScript</li>
+      <li data-aos="fade-up" data-aos-delay="400">React</li>
+      <li data-aos="fade-up" data-aos-delay="500">Node.js</li>
+      <li data-aos="fade-up" data-aos-delay="600">Express.js</li>
+      <li data-aos="fade-up" data-aos-delay="700">MongoDB</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2 data-aos="fade-down">Contact</h2>
+    <form action="/send-email" method="post" enctype="application/x-www-form-urlencoded" data-aos="fade-up" data-aos-delay="100">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    
+      <button type="submit" class="btn">Send</button>
+    </form>
+    
+  </section>
+
+
+
+  <footer>
+    <p>
+      <a href="/apps/DigitalBoard.exe" class="download-btn" download>Download DigitalBoard</a>
+
+    </p>
+  </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({
+        duration: 1000, // Duration of animations
+        easing: 'ease-in-out', // Easing function
+        once: false // Animation occurs every time you scroll
+      });
+    });
+    // Disable right-click
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+
+    const disableShortcuts = (e) => {
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') {
+        e.preventDefault();
+      }
+      if (e.key === 'F12') {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+        e.preventDefault();
+      }
+    };
+
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    // Disable keyboard shortcuts consistently
+    document.addEventListener('keydown', disableShortcuts);
+
+    // Disable keyboard shortcuts on keyup to cover more cases
+    document.addEventListener('keyup', disableShortcuts);
+
+
+  </script>
+</body>
+
+</html>
