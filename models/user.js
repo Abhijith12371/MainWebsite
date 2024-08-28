@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const PassportLocalMongoose = require('passport-local-mongoose');
-const password=process.env.password
+require('dotenv').config(); // Ensure you load environment variables from .env file
+
+const password = process.env.password; // Load password from environment variable
+
 // Connect to MongoDB using Mongoose
 mongoose.connect(`mongodb+srv://abhijithnagula:${password}@logindb.bdzgn.mongodb.net/?retryWrites=true&w=majority`)
 .then(() => console.log("Connected to MongoDB using Mongoose"))
